@@ -1,15 +1,15 @@
 import { Table, Tag } from 'antd';
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from "react-redux";
 import { getCategories } from '../store/actions/categoryActions';
-import { AppState } from '../store/reducers';
+import { AppState } from '../store';
 import { Category } from '../store/types/category';
 
 function Categories() {
-  const { data, loading, error } = useSelector(
+  const { data } = useSelector(
     (state: AppState) => state.categories
   );
-  console.log(data, loading, error);
+  console.log(data);
   const columns = [
     {
       title: 'Name',

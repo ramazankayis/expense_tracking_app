@@ -3,9 +3,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useLocation } from "react-router-dom";
 import { login } from '../store/actions/userActions';
-import { AppState } from '../store/reducers';
+import { AppState } from '../store';
 import { LoginForm } from '../store/types/users';
-import api from '../utils/api';
 import showError from '../utils/showError';
 import ShowSuccess from '../utils/showSuccess';
 function Login() {

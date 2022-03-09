@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import { UserState } from "../types/users";
-import categoryReducer from "./categoryReducer";
-import userReducer from "./userReducer";
+import { UserState } from "./types/users";
+import categoryReducer from "./reducers/categoryReducer";
+import userReducer from "./reducers/userReducer";
 
 export interface AppState{
 
