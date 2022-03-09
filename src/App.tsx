@@ -3,6 +3,8 @@ import { Route } from 'react-router-dom';
 import SignUp from './components/SignUp';
 import { Layout, Menu } from 'antd';
 import Login from './components/Login';
+import PrivateRoute from './components/PrivateRoute';
+import Category from './components/Category';
 
 const { Header, Content, Footer } = Layout;
 
@@ -23,6 +25,7 @@ function App() {
       >
         <Route path="/register" component={SignUp} />
         <Route path="/login" component={Login} />
+        <PrivateRoute path="/categories " component={Category} />
       </Content>
       <Footer style={{ textAlign: 'center' }}>
         Expense Tracker @react learning 2021 app

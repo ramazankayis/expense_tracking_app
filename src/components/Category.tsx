@@ -6,11 +6,10 @@ import { AppState } from '../store/reducers';
 import { Category } from '../store/types/category';
 
 function Category() {
-
   const { data, loading, error } = useSelector(
     (state: AppState) => state.categories
   );
-
+  console.log(data, loading, error);
   const columns = [
     {
       title: 'Name',
