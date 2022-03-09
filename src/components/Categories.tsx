@@ -5,7 +5,7 @@ import { getCategories } from '../store/actions/categoryActions';
 import { AppState } from '../store/reducers';
 import { Category } from '../store/types/category';
 
-function Category() {
+function Categories() {
   const { data, loading, error } = useSelector(
     (state: AppState) => state.categories
   );
@@ -46,4 +46,4 @@ function Category() {
   return <Table columns={columns} dataSource={data} />;
 }
 
-export default Category;
+export default Categories;
